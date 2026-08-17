@@ -1,0 +1,3 @@
+import 'server-only';
+export interface ChatGPTService { searchCatalog(query: string): Promise<never>; recommendContent(userId: string): Promise<never>; answerMovieQuestion(question: string): Promise<never>; getViewerContext(userId: string): Promise<never>; }
+export const chatGPTService: ChatGPTService = { searchCatalog: async()=>{ throw new Error('ChatGPT catalog search is reserved for a future module.'); }, recommendContent: async()=>{ throw new Error('ChatGPT recommendations are reserved for a future module.'); }, answerMovieQuestion: async()=>{ throw new Error('ChatGPT Q&A is reserved for a future module.'); }, getViewerContext: async()=>{ throw new Error('Viewer context is reserved for a future module.'); } };
