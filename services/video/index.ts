@@ -1,0 +1,3 @@
+import 'server-only';
+export interface VideoService { upload(): Promise<never>; process(): Promise<never>; status(): Promise<never>; playback(): Promise<never>; delete(): Promise<never>; }
+export const videoService: VideoService = { upload: async()=>{ throw new Error('Video upload is reserved for a future module.'); }, process: async()=>{ throw new Error('Video processing is reserved for a future module.'); }, status: async()=>{ throw new Error('Video status is reserved for a future module.'); }, playback: async()=>{ throw new Error('Video playback is reserved for a future module.'); }, delete: async()=>{ throw new Error('Video deletion is reserved for a future module.'); } };

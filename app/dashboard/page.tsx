@@ -1,0 +1,1 @@
+export default function DashboardPage(){ return <main className="container"><h1>Protected dashboard foundation</h1><p>This placeholder verifies the protected-route boundary for future authenticated product areas.</p></main>; }
